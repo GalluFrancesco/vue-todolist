@@ -26,6 +26,9 @@ new Vue({
                 return "sbarrato";
 
             return "";
+        },
+        rimuovi: function(i){
+            this.todoList.splice(i,1);
         }
     }
 })

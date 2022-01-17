@@ -12,8 +12,13 @@
     <div id="app">
         <div class="list-container">
             <ul>
-                <li v-for="(element, index) in todoList" :class="fatto(index)">
-                    {{ todoList[index].txt }}
+                <li v-for="(element, index) in todoList"> 
+                    <div  :class="fatto(index)">
+                        {{ todoList[index].txt }}
+                    </div>
+                    <div  @click="rimuovi(index)">
+                        <b>X</b>
+                    </div>
                 </li>
             </ul>
         </div>
