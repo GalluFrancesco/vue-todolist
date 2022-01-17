@@ -1,6 +1,7 @@
 new Vue({
     el:"#app",
     data:{
+        text: "",
         todoList:[
             {
             txt:"Commissione 1",
@@ -29,6 +30,11 @@ new Vue({
         },
         rimuovi: function(i){
             this.todoList.splice(i,1);
+        },
+        aggiungi: function(){
+            const obj={txt:`${this.text}`, done:false};
+            this.todoList.push(obj);
+            this.text="";
         }
     }
 })

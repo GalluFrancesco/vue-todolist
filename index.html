@@ -10,6 +10,8 @@
 </head>
 <body>
     <div id="app">
+        <input type="text"  v-model="text">
+        <span @click="aggiungi">Aggiungi</span>
         <div class="list-container">
             <ul>
                 <li v-for="(element, index) in todoList"> 
