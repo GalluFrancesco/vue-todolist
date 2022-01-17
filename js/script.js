@@ -35,6 +35,9 @@ new Vue({
             const obj={txt:`${this.text}`, done:false};
             this.todoList.push(obj);
             this.text="";
+        },
+        setDone: function(i){
+            this.todoList[i].done= this.todoList[i].done ? false : true;
         }
     }
 })

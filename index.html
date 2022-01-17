@@ -14,7 +14,7 @@
         <span @click="aggiungi">Aggiungi</span>
         <div class="list-container">
             <ul>
-                <li v-for="(element, index) in todoList"> 
+                <li v-for="(element, index) in todoList" @click="setDone(index)"> 
                     <div  :class="fatto(index)">
                         {{ todoList[index].txt }}
                     </div>
