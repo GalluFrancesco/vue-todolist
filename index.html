@@ -10,7 +10,11 @@
 </head>
 <body>
     <div id="app">
-
+        <div class="list-container">
+            <ul>
+                <li v-for="(element, index) in todoList">{{ todoList[index].txt }}</li>
+            </ul>
+        </div>
 
     </div>
    <script src="js/script.js"></script> 
