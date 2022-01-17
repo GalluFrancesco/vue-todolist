@@ -12,7 +12,9 @@
     <div id="app">
         <div class="list-container">
             <ul>
-                <li v-for="(element, index) in todoList">{{ todoList[index].txt }}</li>
+                <li v-for="(element, index) in todoList" :class="fatto(index)">
+                    {{ todoList[index].txt }}
+                </li>
             </ul>
         </div>
 

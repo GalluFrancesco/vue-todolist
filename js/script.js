@@ -19,5 +19,13 @@ new Vue({
             done:false
             }
         ]
+    },
+    methods:{
+        fatto: function(i){
+            if(this.todoList[i].done)
+                return "sbarrato";
+
+            return "";
+        }
     }
 })

@@ -3,3 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.sbarrato{
+    font-style: italic;
+    text-decoration:line-through;
+}
