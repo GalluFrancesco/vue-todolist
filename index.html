@@ -15,7 +15,7 @@
         <div class="list-container">
             <ul>
                 <li v-for="(element, index) in todoList"> 
-                    <div  :class="fatto(index)" @click="setDone(index)">
+                    <div :class="fatto(index)" @click="setDone(index)">
                         {{ todoList[index].txt }}
                     </div>
                     <div  @click="rimuovi(index)">

@@ -23,10 +23,7 @@ new Vue({
     },
     methods:{
         fatto: function(i){
-            if(this.todoList[i].done)
-                return "sbarrato";
-
-            return "";
+             return this.todoList[i].done ? "sbarrato":"";
         },
         rimuovi: function(i){
             this.todoList.splice(i,1);
