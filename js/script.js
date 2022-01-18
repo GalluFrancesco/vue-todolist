@@ -34,7 +34,7 @@ new Vue({
             this.text="";
         },
         setDone: function(i){
-            this.todoList[i].done= this.todoList[i].done ? false : true;
+            this.todoList[i].done= !this.todoList[i].done;
         }
     }
 })
